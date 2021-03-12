@@ -14,12 +14,26 @@
         </div>
        
       @include('layouts.nav')
+      <div class="site-section bg-white site-section-cover overlay" id="contact-section" style="background-image: url('{{ asset('images/coconut-farm.jpg') }}'); height:300px; background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover; min-height:300px">
+            <div class="container">
+                 <div class="row mb-5 justify-content-center text-center">
+                    <div class="col-md-7">
+                        <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
+                            <span class="text-primary">Frequently Ask Questions</span>
+                            <h2 class="text-white">FAQ</h2>                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
           <section class="site-section bg-light" id="pricing-section">
             <div class="container">
                 <div class="row mb-5 justify-content-center text-center">
                     <div class="col-md-7">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <h2>Frequently Ask Questions</h2>
+                            <h2></h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque quae temporibus tenetur
                                 vitae iusto suscipit alias, laudantium, porro unde tempora.</p>
                         </div>

@@ -28,36 +28,33 @@
                     </div>
                 </div>
                 <div class="row mt-5">
+                     <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                        <div>
+                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/coconut.jpg') }}" alt="Image"
+                                    class="img-fluid rounded"></a>
+                            <h2 class="text-primary">Coconut Commodity</h2> 
+                            <p>We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.</p><br>
+                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">See Our Product</a></p>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
                         <div>
                             <a href="#" class="mb-4 d-block"><img src="{{ asset('images/spice.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
-                            <h2><a href="#">Spices Commodity</a></h2>                            
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero
-                                neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga
-                                veritatis culpa quis!</p>
-                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="#">Read More</a></p>
+                            <h2 class="text-primary">Spices Commodity</h2>                            
+                            <p>CV. Best Farmer Indonesia is known as the profesional capable Supplier & Exporter for the indonesian spices, agriculture commodity such White Pepper, Black Pepper, Cloves, Raw Cashew Nuts, Nutmeg,  and many more...</p>
+                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">See Our Product</a></p>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/coconut.jpg') }}" alt="Image"
-                                    class="img-fluid rounded"></a>
-                            <h2><a href="#">Coconut Commodity</a></h2> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat et suscipit iste libero
-                                neque. Vitae quidem ducimus voluptatibus nemo cum odio ab enim nisi, itaque, libero fuga
-                                veritatis culpa quis!</p>
-                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="#">Read More</a></p>
-                        </div>
-                    </div>
+                   
                 </div>
             </div>
         </div>
 
         <div class="site-section bg-primary" id="about-section">
             <div class="container">
-                 <div class="row">
-                    <div class="col-12 text-center mb-5">
+                <div class="row">
+                    <div class="col-md-12 text-center mb-5">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
                             <span class="text-white">Meet Our</span>
                             <h2 class="text-white">Company</h2>
@@ -65,10 +62,11 @@
                     </div>
                 </div>
                 <div class="row justify-content-center mb-4 block-img-video-1-wrap">
-                    <div class="col-md-4 mb-5 ml-auto mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-left" data-aos-delay="">
-                        <h2 class="mb-3 text-black">Header Title Here</h2>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-                        
+                    <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                            <h2 class="text-white mb-4">COCONUT COMODITY</h2>
+                            <p class="text-white">Establish since early 2018, which locate in Kendari, Southeast Sulawesi - Indonesia, We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.
+                                Our company is very skilled in the industry, we have the best experiences that make our customers satisfied with every existing cooperation.</p>
+                            
                     </div>
                     <div class="col-md-4 mb-5">
                         <figure class="block-img-video-1" data-aos="fade">
@@ -78,113 +76,55 @@
                             </a>
                         </figure>
                     </div>
-                    <div class="col-md-4 mb-5 ml-auto mt-4 mt-lg-0 aos-init aos-animate" data-aos="fade-left" data-aos-delay="">
-                        <h2 class="mb-3 text-black">Header Title Here</h2>
-                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-                        
+                   <div class="col-lg-4  aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="text-white mb-4">SPICES COMODITY</h2>
+                        <p class="text-white">in the beginning, this company CV. BEST FARMER INDONESIA focus on derivative coconut product, and after we expanded and we growth so well & fast to be one of a "Leading of coconut and spices supplier in INDONESIA and internationally.</p>
+                                
                     </div>
+   
                 </div>
                 
             </div>
         </div>
-        <div class="site-section bg-light">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="">
-                        <div class="block__35630">
-                            <div class="icon mb-3">
-                                <span class="flaticon-mining"></span>
-                            </div>
-                            <h3 class="mb-3">COMMITMENT</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas
-                            obcaecati quo consequuntur mollitia facilis.
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="100">
-                        <div class="block__35630">
-                            <div class="icon mb-3">
-                                <span class="flaticon-refinery"></span>
-                            </div>
-                            <h3 class="mb-3">INTEGRITY</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas
-                            obcaecati quo consequuntur mollitia facilis.
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block__35630">
-                            <div class="icon mb-3">
-                                <span class="flaticon-blacksmith"></span>
-                            </div>
-                            <h3 class="mb-3">QUALITY</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas
-                            obcaecati quo consequuntur mollitia facilis.
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-3 mb-3" data-aos="fade-up" data-aos-delay="200">
-                        <div class="block__35630">
-                            <div class="icon mb-3">
-                                <span class="flaticon-wagon"></span>
-                            </div>
-                            <h3 class="mb-3">INNOVATION</h3>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas
-                            obcaecati quo consequuntur mollitia facilis.
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-       
      
   
      
-        <div class="site-section bg-white" id="contact-section">
+        <div class="site-section bg-white" id="contact-section" style="background-image: url('{{ asset('images/coconut-farm.jpg') }}'); height:100vh; background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;">
             <div class="container">
                 <div class="row">
-                    <div class="col-12 text-center mb-5" data-aos="fade-up" data-aos-delay="">
-                        <div class="block-heading-1">
-                            <span>Get In Touch</span>
-                            <h2>Contact Us</h2>
+                    <div class="col-12 mb-5" data-aos="fade-up" data-aos-delay="">
+                        <div class="row mb-5">
+                            <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
+                                <div class="pricing">
+                                    <h3 class="text-primary">Improve Indonesian Economy</h3>
+                                    <p>
+                                        High Quality, Commitment, satisfaction, professional services & handling is  our strong value to make all the people who involved in this company (employee, farmer, supplier & buyer) to be satisfy supply chain and can make our relationship as a partner in a long term.
+                                        </p>    
+                                         <p class="">
+                                            <a href="{{ url('/about') }}" class="btn btn-primary btn-md text-white">More About Us</a>
+                                        </p>                               
+                                </div>
+                            </div>
                         </div>
+                       
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-6 mb-5" data-aos="fade-up" data-aos-delay="100">
-                        <form action="#" method="post">
-                            <div class="form-group row">
-                                <div class="col-md-6 mb-4 mb-lg-0">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                                <div class="col-md-6">
-                                    <input type="text" class="form-control" placeholder="First name">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-12">
-                                    <input type="text" class="form-control" placeholder="Email address">
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-12">
-                                    <textarea name="" id="" class="form-control" placeholder="Write your message."
-                                        cols="30" rows="10"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group row">
-                                <div class="col-md-6 ml-auto">
-                                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5"
-                                        value="Send Message">
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                    <div class="col-lg-4 ml-auto" data-aos="fade-up" data-aos-delay="200">
-                        <h2 class="text-black">Need to know more on details. Get In Touch</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, distinctio! Harum
-                            quibusdam nisi, illum nulla aspernatur aut quidem aperiam, quae non tempora recusandae
-                            voluptatibus fugit impedit.</p>
-                        
-                    </div>
+                    
                 </div>
+            </div>
+        </div>
+        
+        <div class="site-section" id="about-section">
+            <div class="container">
+                
+                <div class="row">
+                   
+   
+                </div>
+                
             </div>
         </div>
        @include('layouts/footer')

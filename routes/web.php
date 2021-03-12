@@ -26,6 +26,14 @@ Route::get('/product', function () {
     return view('product.index');
 });
 
+Route::get('/product-detail', function () {
+    return view('product.detail');
+});
+
+Route::get('/gallery', function () {
+    return view('gallery.index');
+});
+
 Route::get('/faq', function () {
     return view('faq.index');
 });

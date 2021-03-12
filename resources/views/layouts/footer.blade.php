@@ -1,24 +1,34 @@
  <footer class="site-footer">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-8">
                 <div class="row">
-                    <div class="col-md-8">
-                        <h2 class="footer-heading mb-4">About Us</h2>
+                    <div class="col-md-4">
+                        <h2 class="footer-heading mb-4">CV. Best Farmer Indonesia</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium
                             magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
                     </div>
                     <div class="col-md-4 ml-auto">
-                        <h2 class="footer-heading mb-4">Features</h2>
+                        <h2 class="footer-heading mb-4">Product</h2>
                         <ul class="list-unstyled">
-                            <li><a href="#">About Us</a></li>
-                            <li><a href="#">Product</a></li>
-                            <li><a href="#">FAQ</a></li>   
-                            <li><a href="#">Contact Us</a></li>
+                            <li><a href="{{ url('/product') }}">Coconut Commodity</a></li>
+                            <li><a href="{{ url('/product') }}">Spice Commodity</a></li>
                         </ul>
                     </div>
+                    <div class="col-md-4 ml-auto">
+                        <h2 class="footer-heading mb-4">Features</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="{{ url('/about') }}">About Us</a></li>
+                            <li><a href="{{ url('/product') }}">Product</a></li>
+                            <li><a href="{{ url('/gallery') }}">Gallery</a></li>
+                            <li><a href="{{ url('/faq') }}">FAQ</a></li>   
+                            <li><a href="{{ url('/contact') }}">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
                 </div>
             </div>
+            
             <div class="col-md-4 ml-auto">
                 <img src="{{ asset('images/logo.png') }}" alt="" height="200px" width="auto">
             </div>

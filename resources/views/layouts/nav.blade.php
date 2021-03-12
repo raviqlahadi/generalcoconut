@@ -2,7 +2,7 @@
             <div class="container">
                 <div class="row align-items-center position-relative">
                     <div class="site-logo">
-                        <a href="index-2.html" class="text-black"><span class="text-primary">GENERAL COCO</a>
+                        <a href="{{ url('/') }}" class="text-black"><span class="text-primary">BEST FARMER</a>
                     </div>
                     <div class="col-12">
                         <nav class="site-navigation text-right ml-auto " role="navigation">
@@ -10,6 +10,7 @@
                                 <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
                                 <li><a href="{{ url('/about') }}" class="nav-link">About</a></li>
                                 <li><a href="{{ url('/product') }}" class="nav-link">Product</a></li>
+                                <li><a href="{{ url('/gallery') }}" class="nav-link">Gallery</a></li>
                                 <li><a href="{{ url('/faq') }}" class="nav-link">FAQ</a></li>
                                 <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                             </ul>
