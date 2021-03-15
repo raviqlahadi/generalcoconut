@@ -28,7 +28,7 @@
                 </div>
             </div>
         </div>
-          <section class="site-section bg-light" id="pricing-section">
+        <section class="site-section bg-light" id="pricing-section">
             <div class="container">
                 <div class="row mb-5 justify-content-center text-center">
                     <div class="col-md-7">

@@ -5,15 +5,33 @@
                 <div class="row">
                     <div class="col-md-4">
                         <h2 class="footer-heading mb-4">CV. Best Farmer Indonesia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium
-                            magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
+                        <p>High Quality, Commitment, satisfaction, professional services & handling is our strong value to make all the people who involved in this company (employee, farmer, supplier & buyer) to be satisfy supply chain and can make our relationship as a partner in a long term.</p>
                     </div>
                     <div class="col-md-4 ml-auto">
-                        <h2 class="footer-heading mb-4">Product</h2>
-                        <ul class="list-unstyled">
-                            <li><a href="{{ url('/product') }}">Coconut Commodity</a></li>
-                            <li><a href="{{ url('/product') }}">Spice Commodity</a></li>
-                        </ul>
+                        <div class="row mb-4">
+                            <div class="col-md-12">
+                                <h2 class="footer-heading mb-4">Product</h2>
+                                <ul class="list-unstyled">
+                                    <li><a href="{{ url('/product') }}">Coconut Commodity</a></li>
+                                    <li><a href="{{ url('/product') }}">Spice Commodity</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                         <div class="row">
+                              <div class="col-md-12">
+                                <h2 class="footer-heading mb-4">Social Media</h2>
+                              
+                            </div>
+                            <div class="col-md-3">
+                               <a href=""><img src="{{ asset('images/icon/instagram.svg') }}" height="50" width="auto" alt=""></a>
+                            </div>
+                             <div class="col-md-3">
+                               <a href=""><img src="{{ asset('images/icon/facebook.svg') }}" height="50" width="auto" alt=""> </a>
+                            </div>
+                             <div class="col-md-3">
+                               <a href=""><img src="{{ asset('images/icon/whatsapp.svg') }}" height="50" width="auto" alt=""> </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="col-md-4 ml-auto">
                         <h2 class="footer-heading mb-4">Features</h2>

@@ -11,7 +11,6 @@
                                 <li><a href="{{ url('/about') }}" class="nav-link">About</a></li>
                                 <li><a href="{{ url('/product') }}" class="nav-link">Product</a></li>
                                 <li><a href="{{ url('/gallery') }}" class="nav-link">Gallery</a></li>
-                                <li><a href="{{ url('/faq') }}" class="nav-link">FAQ</a></li>
                                 <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
                             </ul>
                         </nav>

@@ -30,7 +30,7 @@
                 <div class="row mt-5">
                      <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="100">
                         <div>
-                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/coconut.jpg') }}" alt="Image"
+                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/coconut-1.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
                             <h2 class="text-primary">Coconut Commodity</h2> 
                             <p>We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.</p><br>
@@ -39,7 +39,7 @@
                     </div>
                     <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
                         <div>
-                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/spice.jpg') }}" alt="Image"
+                            <a href="#" class="mb-4 d-block"><img src="{{ asset('images/spices-1.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
                             <h2 class="text-primary">Spices Commodity</h2>                            
                             <p>CV. Best Farmer Indonesia is known as the profesional capable Supplier & Exporter for the indonesian spices, agriculture commodity such White Pepper, Black Pepper, Cloves, Raw Cashew Nuts, Nutmeg,  and many more...</p>
@@ -117,16 +117,7 @@
             </div>
         </div>
         
-        <div class="site-section" id="about-section">
-            <div class="container">
-                
-                <div class="row">
-                   
-   
-                </div>
-                
-            </div>
-        </div>
+       
        @include('layouts/footer')
     </div>
 
