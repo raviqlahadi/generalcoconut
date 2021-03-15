@@ -19,6 +19,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
 
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
 
 </head>
 <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -44,12 +46,17 @@
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+   
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.onscroll = function() {myFunction()};
 
-      gtag('config', 'UA-23581568-13');
+        function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("navbar").classList.remove('nav-top');
+        } else {
+            document.getElementById("navbar").classList.add('nav-top');
+        }
+        }
     </script>
+   
 </html>

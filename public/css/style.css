@@ -711,7 +711,7 @@ h5,
     margin-left: 15px;
     margin-right: 15px;
     padding: 20px 0;
-    color: #000 !important;
+    color: #000;
     display: inline-block;
     text-decoration: none !important
 }
@@ -1076,7 +1076,8 @@ h5,
 }
 
 .sticky-wrapper .site-navbar ul li a {
-    color: rgba(255, 255, 255, .7) !important
+    color: rgba(255, 255, 255, 1) !important;
+    font-weight: 500;
 }
 
 .sticky-wrapper .site-navbar ul li a.active {
@@ -1835,4 +1836,54 @@ h5,
     height: 100%;
     width: 100%;
     position: absolute;
+}
+
+.nav-top {
+    background: none !important;
+    z-index: 10000;
+}
+
+.owl-carousel .owl-item.active h1 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 0.5s;
+}
+
+.owl-carousel .owl-item.active a {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 0.8s;
+}
+
+.owl-carousel .owl-item.active p {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: slideInUp;
+    animation-delay: 0.5s;
+}
+
+.block-heading-1 h2 {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInUp;
+    animation-delay: 1.5s;
+}
+
+.block-heading-1 span {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: fadeInDown;
+    animation-delay: 1.6s;
 }

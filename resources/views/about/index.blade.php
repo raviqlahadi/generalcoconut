@@ -14,11 +14,11 @@
         </div>
        
       @include('layouts.nav')
-         <div class="site-section bg-white site-section-cover" id="contact-section" style="background-image: url('{{ asset('images/farm-banner.jpg') }}'); height:300px; background-position: center;
+        <div class="site-section bg-white site-section-cover overlay" id="contact-section" style="background-image: url('{{ asset('images/farm-banner.jpg') }}'); height:300px; background-position: center;
                 background-repeat: no-repeat;
-                background-size: cover; min-height:300px">
+                background-size: cover; min-height:300px; margin-top:-100px">
             <div class="container">
-                 <div class="row mb-5 justify-content-center text-center">
+                 <div class="row mb-5 mt-5 justify-content-center text-center">
                     <div class="col-md-7">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
                             <span class="text-primary">About</span>
