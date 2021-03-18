@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row align-items-center position-relative">
             <div class="site-logo">
-                <a href="{{ url('/') }}" class="text-black"><span class="text-primary">BEST FARMER</a>
+                <a href="{{ url('/') }}" class="text-black"><span class="text-primary"><img id="logoImage" src="{{ asset('images/logo-white.png') }}" alt="" height="50px"></a>
             </div>
             <div class="col-12">
                 <nav class="site-navigation text-right ml-auto " role="navigation">

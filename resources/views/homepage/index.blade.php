@@ -53,14 +53,7 @@
 
         <div class="site-section bg-primary" id="about-section">
             <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-center mb-5">
-                        <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <span class="text-white">Meet Our</span>
-                            <h2 class="text-white">Company</h2>
-                        </div>
-                    </div>
-                </div>
+               
                 <div class="row justify-content-center mb-4 block-img-video-1-wrap">
                     <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
                             <h2 class="text-white mb-4">COCONUT COMODITY</h2>
@@ -72,7 +65,7 @@
                         <figure class="block-img-video-1" data-aos="fade">
                             <a href="https://vimeo.com/45830194" data-fancybox data-ratio="2">
                                 <span class="icon"><span class="icon-play"></span></span>
-                                <img src="{{ asset('images/hero_1.jpg') }}" alt="Image" class="img-fluid">
+                                <img src="{{ asset('images/slider-1.jpg') }}" alt="Image" class="img-fluid">
                             </a>
                         </figure>
                     </div>
@@ -82,6 +75,11 @@
                                 
                     </div>
    
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-12 text-center">
+                        <p><a class="btn btn-outline-white border-w-2 btn-md" href="{{ url('/about') }}">More About Us</a></p>
+                    </div>
                 </div>
                 
             </div>
@@ -100,7 +98,7 @@
                                 <div class="pricing">
                                     <h3 class="text-primary">Improve Indonesian Economy</h3>
                                     <p>
-                                        High Quality, Commitment, satisfaction, professional services & handling is  our strong value to make all the people who involved in this company (employee, farmer, supplier & buyer) to be satisfy supply chain and can make our relationship as a partner in a long term.
+                                        We participate in the effort of building a sustainable agriculture ecosystem in Indonesia to maximize our advantage in land size and ultimately improving the life of many people in Indonesia.
                                         </p>    
                                          <p class="">
                                             <a href="{{ url('/about') }}" class="btn btn-primary btn-md text-white">More About Us</a>

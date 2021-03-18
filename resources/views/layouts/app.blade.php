@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Best Farmer Indonesia</title>
+    <title>Best Farmer Indonesia | The Leading Supplier Of Coconut and Spices Product</title>
 
     <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,700|Oswald:400,700" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
+
 
     <link rel="stylesheet" href="fonts/icomoon/style.css">
     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
@@ -53,9 +56,12 @@
         function myFunction() {
         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
             document.getElementById("navbar").classList.remove('nav-top');
+            document.getElementById('logoImage').src = "{{ asset('images/logo-black.png') }}"
+            
         } else {
             document.getElementById("navbar").classList.add('nav-top');
-        }
+            document.getElementById('logoImage').src = "{{ asset('images/logo-white.png') }}"
+         }
         }
     </script>
    

@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Arr;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -14,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepage.index');
+    
+    $data['sliders'] = __('sliders');
+    return view('homepage.index', $data);
 });
 
 
@@ -23,11 +27,26 @@ Route::get('/about', function () {
 });
 
 Route::get('/product', function () {
-    return view('product.index');
+    $data['coconut'] = __('products.coconut');
+    $data['spices'] = __('products.spices');
+    return view('product.index', $data);
 });
 
-Route::get('/product-detail', function () {
-    return view('product.detail');
+Route::get('/product-detail/{id}', function ($id) {
+    $products = __('products');
+    $exists_coco = Arr::exists($products['coconut'], $id);
+    if($exists_coco){
+        $type = 'coconut';
+    }else{
+        $exists = Arr::exists($products['spices'], $id);
+        if($exists){
+            $type = 'spices';
+        }else{
+            abort(404);
+        }
+    }
+    $data['product'] = __('products.'.$type.'.'.$id);
+    return view('product.detail',$data);
 });
 
 Route::get('/gallery', function () {

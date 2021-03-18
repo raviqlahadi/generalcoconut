@@ -40,17 +40,14 @@
                         <div class="col-lg-5 mr-auto p-lg-5 mt-4 mt-lg-0 order-lg-1 aos-init" data-aos="fade-right" data-aos-delay="">
                            <div class="ml-5">
                                 <h2 class="mb-3 text-black">Our Story</h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus id dignissimos nemo
-                                minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur
-                                distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-                            <p>Minus perspiciatis ullam itaque voluptas iure vero, nesciunt unde odit aspernatur
-                                distinctio, maiores facere officiis. Cum, esse, iusto?</p>
-                            <ul class="ul-check primary list-unstyled mt-5">
-                                <li>Lorem ipsum dolor.</li>
-                                <li>Quod, amet. Provident.</li>
-                                <li>Quo, adipisci, quis.</li>
-                                <li>Cumque perspiciatis, blanditiis?</li>
-                            </ul>
+                            <p>Indonesia has been known for centuries as the land of spices and coconut.
+There are lots people and especially Southeast Sulawesi people who rely on agriculture as their source of income.Sadly, there are still a lot of farmers in Indonesia who lives on poverty.
+Because they don't have much market to sell their agricultural products,
+they not having the power to set prices where distributors have the bargain to set prices in their favour.Because of that, we set our mission to bring transparency and fairness in price in order to help Indonesian farmers to prosper.</p>
+                            <p>At the first, our company was focus on coconut derivative products,And after that our company expanded and focus on two products (spices and coconut products). We saw that a lots farmers focus on two products, therefore we work together to open the markets.</p>
+                            <p>
+                                <span class="text-primary">CV. BEST FARMER INDONESIA</span> is a privately owned company with a broadly diversified customer base. We are committed to provide highest quality coconut and spices products at competitive market price and serve our customers to the best of our ability. We always deliver on schedule as promised despite market fluctuation.Supported by more than 30 employees and more than 100 farmers, and best technology for our industry. Ultimately, it is our top priority to meet our customers’s satisfaction and expectation. Our dream just simple we want to help Indonesian farmer to prosper and bring more agricultural product from Indonesia to the world.
+                            </p>
                            </div>
                         </div>
                     </div>
@@ -69,8 +66,8 @@
                         <div class="text-center">
                             <a href="#" class="mb-4 d-block"><img src="{{ asset('images/pertanian-landskape-1.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
-                            <h4 class="text-primary">What we do title 1</h4> 
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur dolores voluptas obcaecati quo consequuntur mollitia facilis.</p>
+                            <h4 class="text-primary">Education and Training</h4> 
+                            <p>Our company ia dedicated to provide continuous Education and training for coconut and spices Farmers in order to improve their welfare as well as the quality of our products.</p>
                             
                         </div>
                     </div>
