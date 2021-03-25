@@ -7,12 +7,18 @@
             <div class="col-12">
                 <nav class="site-navigation text-right ml-auto " role="navigation">
                     <ul class="site-menu main-menu js-clone-nav ml-auto d-none d-lg-block">
-                        <li><a href="{{ url('/') }}" class="nav-link">Home</a></li>
-                        <li><a href="{{ url('/about') }}" class="nav-link">About</a></li>
-                        <li><a href="{{ url('/product') }}" class="nav-link">Product</a></li>
-                        <li><a href="{{ url('/gallery') }}" class="nav-link">Gallery</a></li>
-                        <li><a href="{{ url('/contact') }}" class="nav-link">Contact</a></li>
+                      @foreach ($navs['urls'] as $key => $nav)                      
+                            <li><a href="{{ url($nav) }}" class="nav-link">{{ Str::ucfirst($key) }}</a></li>                        
+                      @endforeach
+                        <li class="has-children">
+                            <a href="#about-section" class="nav-link">{{ $navs['language'] }}</a>
+                            <ul class="dropdown arrow-top">
+                                <li><a href="{{ url('/change/cn') }}" class="nav-link">{{ $navs['china'] }}</a></li>
+                                <li><a href="{{ url('/change/en') }}" class="nav-link">{{ $navs['english'] }}</a></li>
+                            </ul>
+                        </li>
                     </ul>
+                    
                 </nav>
             </div>
             <div class="toggle-button d-inline-block d-lg-none"><a href="#"

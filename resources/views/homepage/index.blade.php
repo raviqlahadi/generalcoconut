@@ -22,8 +22,8 @@
                 <div class="row">
                     <div class="col-12 text-center mb-5">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <span>Our Top</span>
-                            <h2>Commodity</h2>
+                            <span>{{ $content['block_heading_span'] }}</span>
+                            <h2>{{ $content['block_heading_header'] }}</h2>
                         </div>
                     </div>
                 </div>
@@ -32,18 +32,18 @@
                         <div>
                             <a href="#" class="mb-4 d-block"><img src="{{ asset('images/coconut-1.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
-                            <h2 class="text-primary">Coconut Commodity</h2> 
-                            <p>We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.</p><br>
-                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">See Our Product</a></p>
+                            <h2 class="text-primary">{{ $content['coconut_commodity'] }}</h2> 
+                            <p>{{ $content['coconut_commodity_desc'] }}</p><br>
+                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">{{ $content['button_product'] }}</a></p>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-6" data-aos="fade-up" data-aos-delay="">
                         <div>
                             <a href="#" class="mb-4 d-block"><img src="{{ asset('images/spices-1.jpg') }}" alt="Image"
                                     class="img-fluid rounded"></a>
-                            <h2 class="text-primary">Spices Commodity</h2>                            
-                            <p>CV. Best Farmer Indonesia is known as the profesional capable Supplier & Exporter for the indonesian spices, agriculture commodity such White Pepper, Black Pepper, Cloves, Raw Cashew Nuts, Nutmeg,  and many more...</p>
-                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">See Our Product</a></p>
+                            <h2 class="text-primary">{{ $content['spices_commodity'] }}</h2>                            
+                            <p>{{ $content['spices_commodity_desc'] }}</p>
+                            <p><a class="btn btn-outline-primary border-w-2 btn-md" href="{{ url('/product') }}">{{ $content['button_product'] }}</a></p>
                         </div>
                     </div>
                    
@@ -56,9 +56,8 @@
                
                 <div class="row justify-content-center mb-4 block-img-video-1-wrap">
                     <div class="col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                            <h2 class="text-white mb-4">COCONUT COMODITY</h2>
-                            <p class="text-white">Establish since early 2018, which locate in Kendari, Southeast Sulawesi - Indonesia, We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.
-                                Our company is very skilled in the industry, we have the best experiences that make our customers satisfied with every existing cooperation.</p>
+                            <h2 class="text-white mb-4">{{ $content['coconut_commodity'] }}</h2>
+                            <p class="text-white">{{ $content['coconut_commodity_desc_second'] }}</p>
                             
                     </div>
                     <div class="col-md-4 mb-5">
@@ -70,15 +69,15 @@
                         </figure>
                     </div>
                    <div class="col-lg-4  aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
-                        <h2 class="text-white mb-4">SPICES COMODITY</h2>
-                        <p class="text-white">in the beginning, this company CV. BEST FARMER INDONESIA focus on derivative coconut product, and after we expanded and we growth so well & fast to be one of a "Leading of coconut and spices supplier in INDONESIA and internationally.</p>
+                        <h2 class="text-white mb-4">{{ $content['spices_commodity'] }}</h2>
+                        <p class="text-white">{{ $content['spices_commodity_desc_second'] }}</p>
                                 
                     </div>
    
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-12 text-center">
-                        <p><a class="btn btn-outline-white border-w-2 btn-md" href="{{ url('/about') }}">More About Us</a></p>
+                        <p><a class="btn btn-outline-white border-w-2 btn-md" href="{{ url('/about') }}">{{ $content['button_about'] }}</a></p>
                     </div>
                 </div>
                 
@@ -96,12 +95,12 @@
                         <div class="row mb-5">
                             <div class="col-md-6 mb-4 mb-lg-0 col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
                                 <div class="pricing">
-                                    <h3 class="text-primary">Improve Indonesian Economy</h3>
+                                    <h3 class="text-primary">{{ $content['heading_more'] }}</h3>
                                     <p>
-                                        We participate in the effort of building a sustainable agriculture ecosystem in Indonesia to maximize our advantage in land size and ultimately improving the life of many people in Indonesia.
+                                        {{ $content['desc_more'] }}
                                         </p>    
                                          <p class="">
-                                            <a href="{{ url('/about') }}" class="btn btn-primary btn-md text-white">More About Us</a>
+                                            <a href="{{ url('/about') }}" class="btn btn-primary btn-md text-white">{{ $content['button_about'] }}</a>
                                         </p>                               
                                 </div>
                             </div>

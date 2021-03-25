@@ -21,8 +21,8 @@
                  <div class="row mb-5 mt-5 justify-content-center text-center">
                     <div class="col-md-7">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <span class="text-primary">OUR COMMODITY</span>
-                            <h2 class="text-white">PRODUCT</h2>                           
+                            <span class="text-primary">{{ $product['our_commodity'] }}</span>
+                            <h2 class="text-white">{{ $product['product'] }}</h2>                           
                         </div>
                     </div>
                 </div>
@@ -35,7 +35,7 @@
                     <div class="col-lg-6 p-4 bg-primary-light left-corner">
                         <div class="row mb-4 mt-4">
                             <div class="col-12">
-                                <h4 class="mb-3 text-primary">Coconut Commodity</h2>
+                                <h4 class="mb-3 text-primary">{{ $product['coconut_commodity'] }}</h2>
                                  <p></p>
                             </div>
                         </div>
@@ -53,7 +53,7 @@
                                         <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">{{ $cct['type'] }}</span>
                                         <div class="block-social-1">
                                             <p class="text-center">
-                                                <a href="{{ url('/product-detail/'.$cct['code']) }}" class="btn btn-success  text-white">See product</a>
+                                                <a href="{{ url('/product-detail/'.$cct['code']) }}" class="btn btn-success  text-white">{{ $product['see_product'] }}</a>
                                             </p>
                                         </div>
                                     </div>
@@ -65,7 +65,7 @@
                     <div class="col-lg-6 p-4 bg-light right-corner">
                         <div class="row mb-4 mt-4">
                             <div class="col-12">
-                                <h4 class="mb-3 text-primary">Spices Commodity</h2>
+                                <h4 class="mb-3 text-primary">{{ $product['spices_commodity'] }}</h2>
                                  <p></p>
                             </div>
                         </div>
@@ -83,7 +83,7 @@
                                         <span class="d-block font-gray-5 letter-spacing-1 text-uppercase font-size-12 mb-3">{{ $spice['type'] }}</span>
                                         <div class="block-social-1">
                                             <p class="text-center">
-                                                <a href="{{ url('/product-detail/'.$spice['code']) }}" class="btn btn-danger  text-white">See product</a>
+                                                <a href="{{ url('/product-detail/'.$spice['code']) }}" class="btn btn-danger  text-white">{{ $product['see_product'] }}</a>
                                             </p>
                                         </div>
                                     </div>

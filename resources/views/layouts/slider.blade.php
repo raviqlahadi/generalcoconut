@@ -1,7 +1,7 @@
   <div class="owl-carousel slide-one-item" style="margin-top: -100px">
     
             @foreach ($sliders as $slider)
-                <div class="site-section-cover overlay img-bg-section" style="background-image: url('{{ $slider['image'] }}'); ">
+                <div class="site-section-cover overlay img-bg-section" style="background-image: url('{{ asset('images/'.$slider['image']) }}'); ">
                     <div class="container">
                         <div class="row align-items-center justify-content-center text-center">
                             <div class="col-md-12 col-lg-7">

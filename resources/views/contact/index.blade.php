@@ -21,8 +21,8 @@
                  <div class="row mb-5 mt-5 justify-content-center text-center">
                     <div class="col-md-7">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <span class="text-primary">Get In Touch</span>
-                            <h2 class="text-white">FAQ & Contact</h2>                           
+                            <span class="text-primary">{{ $contact['get_in_touch'] }}</span>
+                            <h2 class="text-white">{{ $contact['faq_contact'] }}</h2>                           
                         </div>
                     </div>
                 </div>
@@ -32,42 +32,29 @@
         <section class="site-section bg-light" id="pricing-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-6">
-                        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="text-black h4 mb-4">Do you provide samples? Is it free or extra? </h3>
-                            <p>Yes, we could offer the sample for free charge but do not pay the cost of freight.</p>
+                    @foreach ($contact['faq'] as $faq)
+                         <div class="col-lg-6">
+                            <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+                                <h3 class="text-black h4 mb-4">{{ $faq['question'] }}</h3>
+                                <p>{{ $faq['answer'] }}</p>
+                            </div>
                         </div>
-                        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="text-black h4 mb-4">What payment method?</h3>
-                            <p>We only accept T/T(telegraphic transfer)for now.</p>
-                        </div>
-                        
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="text-black h4 mb-4">How long is your delivery time?</h3>
-                            <p>Generally iy is 14 days if the goods are in stock. Or it is 20-30 days if the goods are not in stock, it is according to the quantity.</p>
-                        </div>
-                        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
-                            <h3 class="text-black h4 mb-4"> What is the minimum order quantity?</h3>
-                            <p>Our MOQ is one 20 feet Container for each products.</p>
-                        </div>
-                       
-                    </div>
-                </div>
+                           
+                    @endforeach
+                 </div>
             </div>
         </section>
         <div class="site-section bg-white mb-5" id="contact-section">
             <div class="container">
                 <div class="row " data-aos="fade-up" data-aos-delay="200">
                     <div class="col-lg-12">
-                        <h4 class="text-primary">Address</h4>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+                        <h4 class="text-primary">{{ $contact['address'] }}</h4>
+                        <p>{{ $contact['address_text'] }}</p>
                     </div>    
                 </div>          
                 <div class="row">
                     <div class="col-lg-12 ml-auto" data-aos="fade-up" data-aos-delay="200">
-                      <div class="mapouter"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=kendari&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                      <div class="mapouter"><div style="width: 100%; height:500px" id="gmap_canvas" ></div></div>
                     </div>
                 </div>
                
@@ -80,15 +67,9 @@
             <div class="container">
                  <div class="row">
                     <div class="col-lg-6 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <h2 class="text-white">Need to know more on details?<span class="text-primary"> Contact Us</span></h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores, distinctio! Harum
-                            quibusdam nisi, illum nulla aspernatur aut quidem aperiam, quae non tempora recusandae
-                            voluptatibus fugit impedit.</p>
-                        <ul class="text-white primary list-unstyled mt-5">
-                            <li><i class="fa fa-instagram text-primary"></i>&nbsp; Instagram</li>
-                            <li><i class="fa fa-phone text-primary"></i>&nbsp; Phone</li>
-                            <li><i class="fa fa-envelope text-primary"></i>&nbsp; Email</li>
-                        </ul>
+                        <h2 class="text-white">{{ $contact['form_title'] }}</h2>
+                        <p>{{ $contact['form_desc'] }}</p>
+                        
                     </div>
                     <div class="col-lg-6 mb-5 aos-init aos-animate bg-white p-4 rounded" data-aos="fade-in" data-aos-delay="200">
                         <form action="#" method="post">
@@ -112,7 +93,7 @@
                             </div>
                             <div class="form-group row">
                                 <div class="col-md-6 ml-auto">
-                                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="Send Message">
+                                    <input type="submit" class="btn btn-block btn-primary text-white py-3 px-5" value="{{ $contact['send'] }}">
                                 </div>
                             </div>
                         </form>

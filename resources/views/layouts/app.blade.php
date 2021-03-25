@@ -36,6 +36,7 @@
     </div>
     
     @yield('content')
+    
 </body>
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
     <script src="{{ asset('js/popper.min.js') }}"></script>
@@ -49,7 +50,22 @@
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
-   
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC8aB4MpC1orBp300KQQAiVEnWdpry4OPg"></script>
+    <script>
+        initMap();
+        function initMap() {
+            const myLatLng = { lat: -3.959682, lng: 122.5083645 };
+            const map = new google.maps.Map(document.getElementById("gmap_canvas"), {
+                zoom: 16,
+                center: myLatLng,
+            });
+            new google.maps.Marker({
+                position: myLatLng,
+                map,
+                title: "Hello World!",
+            });
+            }
+    </script>
     <script>
         window.onscroll = function() {myFunction()};
 

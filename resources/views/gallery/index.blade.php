@@ -21,8 +21,8 @@
                  <div class="row mb-5 mt-5 justify-content-center text-center">
                     <div class="col-md-7">
                         <div class="block-heading-1" data-aos="fade-up" data-aos-delay="">
-                            <span class="text-primary">Our Latest Activity</span>
-                            <h2 class="text-white">Gallery</h2>                           
+                            <span class="text-primary">{{ $gallery['our_latest'] }}</span>
+                            <h2 class="text-white">{{ $gallery['gallery'] }}</h2>                           
                         </div>
                     </div>
                 </div>
@@ -32,60 +32,16 @@
         <div class="site-section" id="blog-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_2.jpg" alt="Image" class="img-fluid rounded"></a>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                          
+                    @foreach ($images as $image)
+                         <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
+                            <div>
+                                <a href="" class="mb-4 d-block"><img src="{{ asset($image['url']) }}" alt="Image" class="img-fluid rounded"></a>  
+                                <p>{{ $image['desc'] }}</p>                          
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_3.jpg" alt="Image" class="img-fluid rounded"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>   
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_2.jpg" alt="Image" class="img-fluid rounded"></a>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                          
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_3.jpg" alt="Image" class="img-fluid rounded"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>   
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_2.jpg" alt="Image" class="img-fluid rounded"></a>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                          
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_3.jpg" alt="Image" class="img-fluid rounded"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>   
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_2.jpg" alt="Image" class="img-fluid rounded"></a>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                          
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_3.jpg" alt="Image" class="img-fluid rounded"></a>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>   
-                        </div>
-                    </div>
-                     <div class="col-md-6 col-lg-4 aos-init aos-animate" data-aos="fade-up" data-aos-delay="">
-                        <div>
-                            <a href="" class="mb-4 d-block"><img src="images/hero_2.jpg" alt="Image" class="img-fluid rounded"></a>  
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>                          
-                        </div>
-                    </div>
+                    @endforeach
+                   
+                    
                 </div>
             </div>
         </div>

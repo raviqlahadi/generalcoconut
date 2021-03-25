@@ -3,7 +3,7 @@
     return [
         'slider_1' => [
             'image' => 'slider-1.jpg',
-            'small_text' => 'Welcome To Our Company',
+            'small_text' => '欢迎来到我们公司',
             'heading' => 'Best Farmer Indonesia',
             'button' => 'See Our Product',
             'button_url' => '/product'

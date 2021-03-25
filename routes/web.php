@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Arr;
+use Illuminate\Support\Facades\App;
+
 
 
 /*
@@ -16,23 +18,48 @@ use Illuminate\Support\Arr;
 */
 
 Route::get('/', function () {
-    
+    if(!(session('lang'))){
+        session(['lang'=>'en']);
+    }
+    $locale = session('lang');
+    App::setLocale($locale);
+
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
     $data['sliders'] = __('sliders');
+    $data['content'] = Arr::dot(__('homepage'));
     return view('homepage.index', $data);
 });
 
 
 Route::get('/about', function () {
-    return view('about.index');
+    $locale = session('lang');
+    App::setLocale($locale);
+    
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
+    $data['about'] = __('about');
+    return view('about.index',$data);
 });
 
 Route::get('/product', function () {
+    $locale = session('lang');
+    App::setLocale($locale);
+    
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
     $data['coconut'] = __('products.coconut');
     $data['spices'] = __('products.spices');
+    $data['product'] = __('products');
     return view('product.index', $data);
 });
 
 Route::get('/product-detail/{id}', function ($id) {
+    $locale = session('lang');
+    App::setLocale($locale);
+
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
     $products = __('products');
     $exists_coco = Arr::exists($products['coconut'], $id);
     if($exists_coco){
@@ -50,13 +77,31 @@ Route::get('/product-detail/{id}', function ($id) {
 });
 
 Route::get('/gallery', function () {
-    return view('gallery.index');
+    $locale = session('lang');
+    App::setLocale($locale);
+
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
+    $data['images'] = __('gallery.images');
+    $data['gallery'] = __('gallery');
+    return view('gallery.index', $data);
 });
 
-Route::get('/faq', function () {
-    return view('faq.index');
-});
 
 Route::get('/contact', function () {
-    return view('contact.index');
+    $locale = session('lang');
+    App::setLocale($locale);
+    
+    $data['navs'] = __('navs');
+    $data['footer'] = __('footer');
+    $data['contact'] = __('contact');
+    return view('contact.index',$data);
+});
+
+Route::get('/change/{locale}', function ($locale) {
+    if (!in_array($locale, ['en', 'cn'])) {
+        abort(400);
+    }
+    session(['lang' => $locale]);
+    return redirect()->back();
 });
