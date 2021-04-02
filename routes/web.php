@@ -27,6 +27,7 @@ Route::get('/', function () {
     $data['navs'] = __('navs');
     $data['footer'] = __('footer');
     $data['sliders'] = __('sliders');
+    $data['locale'] = $locale;
     $data['content'] = Arr::dot(__('homepage'));
     return view('homepage.index', $data);
 });
@@ -39,6 +40,7 @@ Route::get('/about', function () {
     $data['navs'] = __('navs');
     $data['footer'] = __('footer');
     $data['about'] = __('about');
+    $data['locale'] = $locale;
     return view('about.index',$data);
 });
 
@@ -51,6 +53,7 @@ Route::get('/product', function () {
     $data['coconut'] = __('products.coconut');
     $data['spices'] = __('products.spices');
     $data['product'] = __('products');
+    $data['locale'] = $locale;
     return view('product.index', $data);
 });
 
@@ -72,7 +75,11 @@ Route::get('/product-detail/{id}', function ($id) {
             abort(404);
         }
     }
+    
     $data['product'] = __('products.'.$type.'.'.$id);
+    $data['products'] = __('products');
+    $data['locale'] = $locale;
+    
     return view('product.detail',$data);
 });
 
@@ -84,6 +91,7 @@ Route::get('/gallery', function () {
     $data['footer'] = __('footer');
     $data['images'] = __('gallery.images');
     $data['gallery'] = __('gallery');
+    $data['locale'] = $locale;
     return view('gallery.index', $data);
 });
 
@@ -95,6 +103,7 @@ Route::get('/contact', function () {
     $data['navs'] = __('navs');
     $data['footer'] = __('footer');
     $data['contact'] = __('contact');
+    $data['locale'] = $locale;
     return view('contact.index',$data);
 });
 

@@ -1,29 +1,29 @@
 <?php
     return [
-        "about"=>"About",
-        "our_company"=>"Our Company",
-        "our_story" => "Our Story",
+        "about"=> "关于我",
+        "our_company"=> "们公司",
+        "our_story" => "我们的故事",
         "story_desc" => [
-                "Indonesia has been known for centuries as the land of spices and coconut. There are lots people and especially Southeast Sulawesi people who rely on agriculture as their source of income.Sadly, there are still a lot of farmers in Indonesia who lives on poverty. Because they don't have much market to sell their agricultural products, they not having the power to set prices where distributors have the bargain to set prices in their favour.Because of that, we set our mission to bring transparency and fairness in price in order to help Indonesian farmers to prosper.",
-                "At the first, our company was focus on coconut derivative products,And after that our company expanded and focus on two products (spices and coconut products). We saw that a lots farmers focus on two products, therefore we work together to open the markets.",
-                "CV. BEST FARMER INDONESIA is a privately owned company with a broadly diversified customer base. We are committed to provide highest quality coconut and spices products at competitive market price and serve our customers to the best of our ability. We always deliver on schedule as promised despite market fluctuation.Supported by more than 30 employees and more than 100 farmers, and best technology for our industry. Ultimately, it is our top priority to meet our customers’s satisfaction and expectation. Our dream just simple we want to help Indonesian farmer to prosper and bring more agricultural product from Indonesia to the world."
+        "几个世纪以来，印度尼西亚一直被称为香料和椰子之乡。有很多人，特别是苏拉威西东南部的人，他们依靠农业作为收入来源。可悲的是，印尼仍有很多农民生活贫困。因为他们没有太多的市场来销售他们的农产品，所以他们没有权力在分销商有权讨价还价的地方定价。正因为如此，我们设定了我们的使命，使透明度和公平的价格，以帮助印尼农民繁荣。",
+        "后我们公司扩大并专注于两种产品（香料和椰子产品）。我们看到很多农民把注意力集中在两种产品上，所以我们一起努力开拓市场。",
+        "Best Farmer Indonesia有限合伙制是一家私营公司，拥有广泛的多元化客户群。我们致力于以有竞争力的市场价格提供最优质的椰子和香料产品，并竭诚为客户服务。尽管市场波动，我们总是如期交货。由30多名员工和100多名农民提供支持，并为我们的行业提供最好的技术。最终，满足客户的满意和期望是我们的首要任务。我们的梦想很简单，我们要帮助印尼农民致富，把印尼更多的农产品带到世界。"
         ],
-        "what_we_do" => "What We Do",
+        "what_we_do" => "我们所做的",
         "we_do" => [
             [
-                "title" => "EDUCATION AND TRAINING",
+                "title" => "教育和培训",
                 "url" => "images/pertanian-landskape-1.jpg",
-                "content" => "Our company ia dedicated to provide continuous Education and training for coconut and spices Farmers in order to improve their welfare as well as the quality of our products.",
+                "content" => "= 我们公司致力于为椰子和香料农民提供持续的教育和培训，以提高他们的福利以及我们产品的质量。",
             ],
              [
-                "title" => "GOVERNMENT PROGRAM",
+                "title" => "政府计划",
                 "url" => "images/pertanian-landskape-2.jpg",
-                "content" => "We participate in government programs to develop commodity products from underdeveloped villages. We are always committed to helping Indonesian farmers prosper and bringing agricultural products from villages to the world.",
+                "content" => "= 我们参与政府计划，开发欠发达村庄的商品。我们一直致力于帮助印尼农民繁荣发展，把农村的农产品带到世界各地。",
             ],
              [
-                "title" => "Coconut and Spices plantation",
+                "title" => "椰子和香料种植园",
                 "url" => "images/pertanian-landskape-3.jpg",
-                "content" => "We process a total of 1.700 hectares of coconut plantation from all coconut plantations in south east sulawesi",
+                "content" => "我们在苏拉威西东南部的所有椰子种植园中共加工了1.700公顷的椰子种植园",
             ],
              
         ],

@@ -1,18 +1,18 @@
 <?php
     return [
-        'block_heading_span' => 'Our Top',
-        'block_heading_header' => 'Commodity',
-        'coconut_commodity' => 'Coconut Commodity',
-        'coconut_commodity_desc' => 'We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.',
-        'coconut_commodity_desc_second' => 'Establish since early 2018, which locate in Kendari, Southeast Sulawesi - Indonesia, We are an Indonesian company engaged in plantation and we also supply raw materials from coconut which will be in production some processed products.
-                                Our company is very skilled in the industry, we have the best experiences that make our customers satisfied with every existing cooperation.',
+        'block_heading_span' => '我们的顶级',
+        'block_heading_header' => '商品',
+        'coconut_commodity' => '椰子商品',
+        'coconut_commodity_desc' => '我们是一家从事种植业的印度尼西亚公司，我们还提供椰子原料，这些原料将用于生产某些加工产品。',
+        'coconut_commodity_desc_second' => '我们成立于2018年初，位于印度尼西亚苏拉威西岛东南部的肯达里，是一家从事种植业的印尼公司，我们还提供椰子原料，这些原料将用于生产一些加工产品。我们的公司在这个行业非常熟练，我们拥有最好的经验，可以使我们的客户对每一个现有的合作感到满意。',
         'button_product' => 'See Our Product',
-        'button_about' => 'More About Us',
-        'spices_commodity' => 'Spices Commodity',
-        'spices_commodity_desc' => 'CV. Best Farmer Indonesia is known as the profesional capable Supplier & Exporter for the indonesian spices, agriculture commodity such White Pepper, Black Pepper, Cloves, Raw Cashew Nuts, Nutmeg,  and many more...',
-        'spices_commodity_desc_second' => 'In the beginning, this company CV. BEST FARMER INDONESIA focus on derivative coconut product, and after we expanded and we growth so well & fast to be one of a "Leading of coconut and spices supplier in INDONESIA and internationally.',
-        'heading_more' => 'Improve Indonesian Economy',
-        'desc_more' => 'We participate in the effort of building a sustainable agriculture ecosystem in Indonesia to maximize our advantage in land size and ultimately improving the life of many people in Indonesia.',
+        'button_about' => '更多公司介绍',
+        'spices_commodity' => '香料商品',
+        'spices_commodity_desc' => '有限合伙制 有限合伙制被称为印尼香料，农业商品的专业能力供应商和出口商，例如白胡椒、黑胡椒、丁香、生腰果、肉豆蔻等等..',
+        'spices_commodity_desc_second' => '一开始，这BEST FARMER INDONESIA有限合伙制公司专注于衍生椰子产品，经过我们的扩张和快速发展，我们成为了一个“领先的椰子和香料供应商在印度尼西亚和国际上。
+一开始，这家公司的简历。贝斯特法默印尼公司专注于椰子衍生产品，经过我们的扩张和快速发展，成为印尼和国际上椰子和香料的领先供应商之一。',
+        'heading_more' => '改善印尼经济',
+        'desc_more' => '我们参与在印度尼西亚建设可持续农业生态系统的努力，以最大限度地发挥我们在土地面积方面的优势，并最终改善印度尼西亚许多人的生活',
         
     ];
 

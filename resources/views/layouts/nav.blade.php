@@ -11,10 +11,19 @@
                             <li><a href="{{ url($nav) }}" class="nav-link">{{ Str::ucfirst($key) }}</a></li>                        
                       @endforeach
                         <li class="has-children">
-                            <a href="#about-section" class="nav-link">{{ $navs['language'] }}</a>
+                            <a href="#about-section" class="nav-link">
+                                <img src="{{ asset('images/icon/'.$locale.'.svg') }}" alt="" height="25">
+                            
+                            </a>
                             <ul class="dropdown arrow-top">
-                                <li><a href="{{ url('/change/cn') }}" class="nav-link">{{ $navs['china'] }}</a></li>
-                                <li><a href="{{ url('/change/en') }}" class="nav-link">{{ $navs['english'] }}</a></li>
+                                @if ($locale=='en')
+                                    <li><a href="{{ url('/change/cn') }}" class="nav-link"> <img src="{{ asset('images/icon/cn.svg') }}" alt="" height="25"> {{ $navs['china'] }}</a></li>
+                                @else
+                                    <li><a href="{{ url('/change/en') }}" class="nav-link"> <img src="{{ asset('images/icon/en.svg') }}" alt="" height="25"> {{ $navs['english'] }}</a></li>    
+                                @endif
+                                
+                                
+        
                             </ul>
                         </li>
                     </ul>

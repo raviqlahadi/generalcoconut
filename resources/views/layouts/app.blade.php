@@ -50,7 +50,7 @@
     <script src="{{ asset('js/aos.js') }}"></script>
     <script src="{{ asset('js/main.js') }}"></script>
 
-    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC8aB4MpC1orBp300KQQAiVEnWdpry4OPg"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyC4LRLIoWlb3SYwgnkG78KXNfyF5rO6iFU"></script>
     <script>
         initMap();
         function initMap() {
